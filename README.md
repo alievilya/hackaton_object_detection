@@ -26,7 +26,7 @@
 3. Команда для запуска детектирования на тестовом наборе данных: 
    ```
    python ./yolov5/detect.py --weights hackaton/training/weights/best.pt --data data_yolo_format/config.yaml \
-   --img 1280 --conf 0.38 --source test/images --save-txt --save-conf
+   --img 1280 --conf 0.25 --source test/images --save-txt --save-conf
    ```
 
 4. Получение итогового csv-файла
@@ -48,4 +48,4 @@ recall | 0.739 |
 Обучающий датасет дополнительно не размечался, тестовый датасет также не размечался и использовался исключительно для 
 финального теста.
 
-Прикрепляю ссылку на обученные веса: (попозже)
+Прикрепляю ссылку на обученные веса: https://drive.google.com/file/d/1bFyA6pGY4aaMVebraq2TV-6aOC_NArxw/view?usp=sharing

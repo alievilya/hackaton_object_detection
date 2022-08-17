@@ -21,8 +21,7 @@ def get_all_labels():
     os.makedirs(path, exist_ok=True)
     for img_name in tqdm(os.listdir(imgs_path_src)):
         name, _ = os.path.splitext(img_name)
-        for class_name in labels_map.keys():
-            class_id = labels_map[class_name]
+        for class_name, class_id in labels_map.items():
             txt_name = f'{name}_{class_name}..txt'
             if txt_name in labels_src:
                 with open(os.path.join(labels_path_src, txt_name), 'r') as reader:
